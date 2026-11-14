@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/img/:file((?!logo\\.webp).*)", "destination": "https://cdn.jsdelivr.net/gh/altrocompany/suavemare-site@b1323641c47e0785314f16dae2670735a6ed663d/img/:file" }
+  ]
+}

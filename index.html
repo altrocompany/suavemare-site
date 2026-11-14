@@ -25,6 +25,11 @@ header nav{display:none !important}
 .tl-row > div:has(> .tl-text){grid-row:1}
 .tl-row > div:has(> img){grid-row:2}
 }
+.hero-pics{display:block;max-width:540px;margin:0 auto;width:100%;padding:0 0 70px 0}
+.hero-sun{width:72%;top:-4%;right:-6%}
+.hero-main{position:relative;display:block;width:74%;height:auto;aspect-ratio:4 / 5.2;object-fit:cover;object-position:50% 60%;margin-left:auto;border-radius:220px 220px 28px 28px;box-shadow:0 24px 50px rgba(14,42,71,0.22)}
+.hero-sub{position:absolute;left:0;bottom:0;width:58%;height:auto;aspect-ratio:4 / 3;object-fit:cover;border-radius:22px;border:7px solid #FFFFFF;box-shadow:0 20px 40px rgba(14,42,71,0.24);transform:rotate(-3deg);z-index:2}
+@media (max-width: 760px){.hero-pics{padding-bottom:48px}.hero-main{width:80%}.hero-sub{width:60%;border-width:5px}}
 .s1a,.s23,.s36,.s4a,.mau{height:auto}
 .mau{width:100%;aspect-ratio:4 / 5;object-fit:cover;object-position:50% 62%;border-radius:28px;display:block}
 .gal-sec{background:#FFF8EC;padding:clamp(64px, 8vw, 112px) 0}
@@ -56,8 +61,8 @@ header nav{display:none !important}
 <section id="topo" class="s8">
 <div class="s9">
 <div class="sa">
-<h1 class="sb">Passeios de barco em Ilhabela, do jeito que vocês quiserem</h1>
-<p class="sc">Para casais, famílias e grupos de amigos. Vocês contam o que procuram e a gente monta o roteiro: as praias, o mergulho, o almoço e o tempo de cada parada.</p>
+<h1 class="sb">Você imagina o passeio. A gente transforma em realidade.</h1>
+<p class="sc">Passeios de barco em Ilhabela para casais, famílias e grupos de amigos. Vocês contam o que procuram e a gente monta o roteiro: as praias, o mergulho, o almoço e o tempo de cada parada.</p>
 <div class="sd">
 <div class="se">
 <div class="sf">Qual é o clima do seu passeio?</div>
@@ -80,14 +85,18 @@ header nav{display:none !important}
 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" class="s17"><g fill="none" stroke="#0F6FAE" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3.2"></circle><path d="M3.5 19c.6-3 2.8-4.8 5.5-4.8s4.9 1.8 5.5 4.8"></path><circle cx="16.5" cy="9.5" r="2.6"></circle><path d="M16 14.4c2.3.1 4 1.7 4.5 4.3"></path></g>
 </svg>Até 10 pessoas por passeio</div>
 <div class="s16">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" class="s17"><g fill="none" stroke="#0F6FAE" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="5.5" cy="11" rx="1.8" ry="2.3"></ellipse><ellipse cx="9.3" cy="6.6" rx="1.9" ry="2.5"></ellipse><ellipse cx="14.7" cy="6.6" rx="1.9" ry="2.5"></ellipse><ellipse cx="18.5" cy="11" rx="1.8" ry="2.3"></ellipse><path d="M12 12.2c-2.6 0-5 3-5 5.3 0 1.6 1.2 2.4 2.6 2.4 1 0 1.6-.5 2.4-.5s1.4.5 2.4.5c1.4 0 2.6-.8 2.6-2.4 0-2.3-2.4-5.3-5-5.3z"></path></g>
+</svg>Pet friendly</div>
+<div class="s16">
 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" class="s17"><g fill="none" stroke="#0F6FAE" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15.5V12l2-4h9l3 4h3.5v3.5"></path><path d="M3 15.5h18"></path><circle cx="7" cy="16.5" r="2"></circle><circle cx="17" cy="16.5" r="2"></circle><path d="M8 8v4M3.5 12h17"></path></g>
 </svg>Também tem Jeep 4x4</div>
 </div>
 </div>
-<div class="s18">
-<div aria-hidden="true" class="s19">
+<div class="s18 hero-pics">
+<div aria-hidden="true" class="s19 hero-sun">
 </div>
-<img src="img/lancha-vitare.webp" width="1100" height="825" alt="Lancha da Suavemaré ancorada em águas cristalinas de Ilhabela" class="s1a" style="object-position:50% 50%" fetchpriority="high">
+<img src="img/hero-grupo.webp" width="800" height="1422" alt="Grupo a bordo da lancha da Suavemaré navegando em Ilhabela" class="hero-main" fetchpriority="high">
+<img src="img/hero-amigos.webp" width="900" height="675" alt="Amigos relaxando a bordo da lancha, com água verde e mata ao fundo" class="hero-sub">
 </div>
 </div>
 <svg aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" class="s1b"><path d="M0 30 C 180 0, 360 60, 540 30 S 900 0, 1080 30 S 1300 60, 1440 30 L1440 60 L0 60 Z" fill="#FFFFFF"></path>
@@ -101,7 +110,7 @@ header nav{display:none !important}
 </div>
 <div class="s21">
 <div class="s22">
-<img src="img/baia.webp" width="1100" height="825" alt="Vista do alto de uma baía de Ilhabela com barcos ancorados" class="s23" loading="lazy">
+<img src="img/aerea.webp" width="1100" height="825" alt="Vista aérea do mar de Ilhabela com uma ilhota coberta de palmeiras" class="s23" loading="lazy">
 </div>
 <div class="s24">
 <div class="s25">
@@ -110,7 +119,7 @@ header nav{display:none !important}
 </svg>
 </div>
 <div class="s27">
-<div class="s28">As praias que vocês escolherem</div>
+<div class="s28">As praias que vocês mais gostaram</div>
 <div class="s29">Paradas nos cantos mais bonitos da ilha, de acordo com o grupo.</div>
 </div>
 </div>
@@ -181,18 +190,18 @@ header nav{display:none !important}
 <img src="img/praia-rio.webp" width="1100" height="828" alt="Praia do Poço" class="s36" loading="lazy">
 <div class="s37">
 <h3 class="s38">Praia do Poço</h3>
-<p class="s39">Na face norte de Ilhabela, com água transparente e mata até a beira do mar.</p>
+<p class="s39">Na face norte de Ilhabela, uma cachoeira que forma um poço que cai no mar.</p>
 </div>
 </article>
 <article class="s35">
-<img src="img/baia.webp" width="1100" height="825" alt="Praia de Castelhanos" class="s36" loading="lazy">
+<img src="img/eustaquio.webp" width="1100" height="825" alt="Saco do Eustáquio" class="s36" style="object-position:50% 20%" loading="lazy">
 <div class="s37">
-<h3 class="s38">Praia de Castelhanos</h3>
-<p class="s39">No lado leste da ilha, uma baía grande de areia clara, cercada de mata e de frente para o mar aberto.</p>
+<h3 class="s38">Saco do Eustáquio</h3>
+<p class="s39">Para muitos, a praia mais linda de Ilhabela: uma enseada cercada de Mata Atlântica, com águas cristalinas e mar tranquilo, perfeita para mergulhar e relaxar.</p>
 </div>
 </article>
 </div>
-<div class="s3a"><span class="s3b">E ainda:</span><span class="s3c">Praia do Jabaquara</span><span class="s3c">Praia do Bonete</span><span class="s3c">Outros cantos para explorar</span>
+<div class="s3a"><span class="s3b">E ainda:</span><span class="s3c">Praia do Jabaquara</span><span class="s3c">Praia de Castelhanos</span><span class="s3c">Outros cantos para explorar</span>
 </div>
 </div>
 </section>
@@ -303,7 +312,7 @@ header nav{display:none !important}
 <div class="s1e">
 <h2 class="s5c">Quem leva vocês conhece cada canto da ilha</h2>
 </div>
-<p class="s5d">O Maurício navega em Ilhabela há mais de 15 anos e conhece as praias como poucos. Hoje, a Suavemaré leva casais, famílias e amigos para viver o melhor da ilha pelo mar.</p>
+<p class="s5d">O Maurício conhece as praias de Ilhabela como poucos. Hoje, a Suavemaré leva casais, famílias e amigos para viver o melhor da ilha pelo mar.</p>
 <div class="s5e">
 <div class="s25">
 <div class="s5f">
